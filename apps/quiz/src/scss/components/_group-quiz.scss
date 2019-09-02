@@ -1,0 +1,15 @@
+.group-quiz {
+  &__quiz {
+    &-name {
+      color: map-get($colors, light);
+      font-size: 23px;
+    }
+    &-time {
+      font-size: 13px;
+      color: rgba(map-get($colors, warm), 0.3);
+    }
+    &-desc {
+      font-size: 11px;
+    }
+  }
+}

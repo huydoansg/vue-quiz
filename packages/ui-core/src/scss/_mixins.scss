@@ -1,0 +1,15 @@
+// mixin for applying shadow - uses $shadow types array
+@mixin shadow($shadowType: shadow20) {
+  box-shadow: #{map-get($shadowTypes, $shadowType)};
+}
+
+// Shapes
+@mixin roundCorners($rad: $border-radius-size) {
+  border-radius: $rad;
+}
+
+@mixin transition($target: all) {
+  -webkit-transition: $target $transitions-speed;
+     -moz-transition: $target $transitions-speed;
+          transition: $target $transitions-speed;
+}

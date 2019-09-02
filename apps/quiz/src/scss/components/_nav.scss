@@ -1,0 +1,14 @@
+.nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: map-get($colors, primary);
+    opacity: 0.2;
+
+    &.router-link-exact-active {
+      color: map-get($colors, light);
+      opacity: 1;
+    }
+  }
+}

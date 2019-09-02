@@ -1,0 +1,25 @@
+@import "../theme";
+@import "../mixins";
+
+@mixin card() {
+  width: auto;
+  @include shadow(shadow60);
+  @include transition();
+  @include roundCorners($card-border-radius);
+  display: flex;
+  flex-direction: column;
+  background: $color-white;
+  position: relative;
+  padding: 15px;
+  margin: 15px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-radius: $border-radius-size $border-radius-size 0 0;
+  }
+  &__content {
+    padding: 15px 0;
+  }
+}

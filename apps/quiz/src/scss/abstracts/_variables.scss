@@ -1,0 +1,73 @@
+// colors
+$colors: (
+  primary: #2c3e50,
+  white: #fff,
+  light: #42b983,
+  warm: red,
+  dark: black,
+  shadow: #333
+);
+
+// text color
+$text-colors :(
+  primary: #333,
+  second: #42b983,
+  white: #fff,
+  warm: red,
+);
+
+// font sizes
+$fonts: (
+  regular: 'Roboto-Light',
+  medium: 'Roboto-Medium',
+  thin: 'Roboto-Thin',
+  bold: 'Roboto-Bold'
+);
+
+$font-sizes: (
+  body: 14px,
+  title: 18px,
+  subtitle: 16px,
+  small: 11px
+);
+
+$snackbar-main-size: 11px;
+
+// components size
+$layout-heights: (
+  topbar: 40px,
+  bottombar: 60px
+);
+
+
+// borders
+$border-radius-size: 3px;
+$card-border-radius: 10px;
+
+$border-radius: (
+  normal: 4px,
+  box: 10px
+);
+
+// transitions
+$transitions-speed: 0.25s;
+
+$transitions: (
+  normal: 0.25s
+);
+
+// opacity
+$opacity: (
+  superlight: 0.1,
+  light: 0.3,
+  half: 0.5,
+  bold: 0.7,
+  almost: 0.9
+);
+
+// shadow
+$shadowTypes: (shadow20: 0 1px 4px 0 rgba(map-get($colors, shadow), map-get($opacity, superlight)),
+  shadow40: 0 4px 8px 0 rgba(map-get($colors, shadow), map-get($opacity, superlight)),
+  shadow60: 0 4px 10px 6px rgba(map-get($colors, shadow), map-get($opacity, superlight)),
+  shadow80: 0 14px 24px 0 rgba(map-get($colors, shadow), map-get($opacity, superlight)),
+  shadow100: 0 22px 32px 0 rgba(map-get($colors, shadow), map-get($opacity, superlight)));

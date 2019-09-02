@@ -1,0 +1,37 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  .card {
+    &__content {
+      p {
+        text-align: left;
+        line-height: 26px;
+      }
+    }
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+.welcome-page {
+  &__header {
+    font-family: map-get($map: $fonts, $key: bold);
+    text-align: center;
+  }
+}
+// .question-page {}
+.review-page {
+  .answers {
+    .not-matched p {
+      color:  map-get($text-colors, warm);
+    }
+  }
+}

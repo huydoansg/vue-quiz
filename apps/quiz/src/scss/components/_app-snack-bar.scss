@@ -1,0 +1,9 @@
+.app-snackbars {
+  position: fixed;
+  bottom: 50px;
+  width: 80%;
+  left: 10%;
+  &__snack-bar {
+    margin: 4px auto;
+  }
+}

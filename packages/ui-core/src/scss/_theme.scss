@@ -1,0 +1,23 @@
+// Colors
+$color-primary: #1c8fec;
+$color-secondary: #fa0;
+$color-tertiary: #13c1ca;
+$color-success: #00cf98;
+$color-warning: #ffd770;
+$color-error: #ff6e65;
+$color-white: #fff;
+$color-black: #393b45;
+$shadow-color: $color-black;
+
+$border-radius-size: 3px;
+$transitions-speed: 0.25s;
+
+// Shadows
+$shadowTypes: (shadow20: 0 1px 4px 0 rgba($shadow-color, 0.15),
+  shadow40: 0 4px 8px 0 rgba($shadow-color, 0.15),
+  shadow60: 0 0 10px 10px rgba($shadow-color, 0.1),
+  shadow80: 0 14px 24px 0 rgba($shadow-color, 0.15),
+  shadow100: 0 22px 32px 0 rgba($shadow-color, 0.15));
+
+// card
+$card-border-radius: 10px;

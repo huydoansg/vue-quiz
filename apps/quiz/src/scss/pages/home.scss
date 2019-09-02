@@ -1,0 +1,11 @@
+.home {
+  .nav {
+    text-align: center;
+  }
+  a.quiz-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto-Light";
+  }
+}

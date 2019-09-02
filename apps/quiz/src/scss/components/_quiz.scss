@@ -1,0 +1,31 @@
+.q-container {
+  padding: 20px 0;
+
+  .q-question {
+    text-align: left;
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .q-opts {
+    span {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  
+  ul {
+    text-align: left;
+    padding: 0;
+
+    li {
+      margin: 4px 0;
+      list-style: none;
+
+      label {
+        span {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

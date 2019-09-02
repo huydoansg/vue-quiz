@@ -1,0 +1,6 @@
+
+body {
+  font-family: map-get($fonts, regular), serif;
+  background-color: map-get($colors, white);
+  color: map-get($text-colors, primary);
+}

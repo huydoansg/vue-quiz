@@ -1,0 +1,19 @@
+@mixin btn() {
+  font-family: map-get($fonts, thin);
+  padding: 8px 14px;
+  font-size: 22px;
+  border-radius: 6px;
+  border: 1px solid;
+  color: map-get($colors, white);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  @include btn;
+  background: map-get($colors, light);
+}
+.btn-secondary {
+  @include btn;
+  background: map-get($colors, primary);
+}
