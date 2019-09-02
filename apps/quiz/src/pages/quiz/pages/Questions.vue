@@ -10,8 +10,8 @@
 
 <script>
 export default {
-  inject: ["$service"],
-  name: "QuestionsPage",
+  inject: ['$service'],
+  name: 'QuestionsPage',
   methods: {
     goDetail() {
       /**
@@ -20,7 +20,7 @@ export default {
        *    - go to next question
        *    - process in other layer ofcourse
        */
-      this.$router.push({ path: "/quiz/q/id" });
+      this.$router.push({ path: '/quiz/q/id' });
     }
   }
 };

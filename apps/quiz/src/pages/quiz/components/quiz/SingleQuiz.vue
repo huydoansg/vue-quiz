@@ -4,7 +4,7 @@
       <ul>
         <li v-for="o in opts" :key="o.id">
           <label>
-            <input type="radio" :value="o.id" :name="path" @change="$emit('changed', o)" />
+            <input type="radio" :value="o.id" :name="quiz.id" @change="$emit('changed', o)" />
             <span v-html="o.text" />
           </label>
         </li>
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import QuizBase from "./QuizBase";
+import QuizBase from './QuizBase.vue';
 
 export default {
-  name: "SingleQuiz",
+  name: 'SingleQuiz',
   components: { QuizBase },
   props: {
     quiz: { type: Object, default: () => {} }

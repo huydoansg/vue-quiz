@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import QuizBase from "./QuizBase";
+import QuizBase from './QuizBase.vue';
 
 export default {
-  name: "MultipleQuiz",
+  name: 'MultipleQuiz',
   components: { QuizBase },
   props: {
     quiz: { type: Object, default: () => {} }

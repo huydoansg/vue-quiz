@@ -37,18 +37,18 @@ const nodeJSQuestions = [{
   order: 1,
   path: '1',
   type: QuestionType.SINGLE,
-  question: ' Why code written in Node.JS is pretty fast although being written in JavaScript' +
-    '?',
+  question: ' Why code written in Node.JS is pretty fast although being written in JavaScript'
+    + '?',
   result: ['A'],
   answers: [],
   opts: [{
     id: 'A',
-    text: 'Node.JS internally converts JavaScript code to Java based code and then execute ' +
-      'the same.'
+    text: 'Node.JS internally converts JavaScript code to Java based code and then execute '
+      + 'the same.'
   }, {
     id: 'B',
-    text: 'Node.JS internally converts JavaScript code to C based code and then execute the' +
-      ' same.'
+    text: 'Node.JS internally converts JavaScript code to C based code and then execute the'
+      + ' same.'
   }, {
     id: 'C',
     text: "Being built on Google Chrome's V8 JavaScript Engine."
@@ -77,124 +77,124 @@ const nodeJSQuestions = [{
   group: 4,
   order: 3,
   type: QuestionType.SINGLE,
-  question: "Which statement executes the code of sample.js file?",
+  question: 'Which statement executes the code of sample.js file?',
   result: ['B'],
   opts: [{
-    id: "A",
-    text: "nodejs sample.js"
+    id: 'A',
+    text: 'nodejs sample.js'
   }, {
-    id: "B",
-    text: "node sample.js"
+    id: 'B',
+    text: 'node sample.js'
   }, {
-    id: "C",
-    text: "sample.js"
+    id: 'C',
+    text: 'sample.js'
   }, {
-    id: "D",
-    text: " None of the above"
+    id: 'D',
+    text: ' None of the above'
   }]
 }, {
   id: 4,
   group: 4,
   order: 4,
   type: QuestionType.SINGLE,
-  question: "What are the key features of Node.js?",
+  question: 'What are the key features of Node.js?',
   result: ['D'],
   opts: [{
-    id: "A",
-    text: "Real time Data intensive"
+    id: 'A',
+    text: 'Real time Data intensive'
   }, {
-    id: "B",
-    text: "Highly scalable servers for Web Applications"
+    id: 'B',
+    text: 'Highly scalable servers for Web Applications'
   }, {
-    id: "C",
-    text: "Builds fast and scalable network Applications"
+    id: 'C',
+    text: 'Builds fast and scalable network Applications'
   }, {
-    id: "D",
-    text: "All of the above"
+    id: 'D',
+    text: 'All of the above'
   }]
 }, {
   id: 5,
   group: 4,
   order: 5,
   type: QuestionType.SINGLE,
-  question: "Why a Node.JS code is pretty fast although being written in JavaScript?",
+  question: 'Why a Node.JS code is pretty fast although being written in JavaScript?',
   result: ['C'],
   opts: [{
-    id: "A",
-    text: "Node.JS internally converts JavaScript code to Java based code and then execute " +
-      "the same"
+    id: 'A',
+    text: 'Node.JS internally converts JavaScript code to Java based code and then execute '
+      + 'the same'
   }, {
-    id: "B",
-    text: "Node.JS internally converts JavaScript code to C based code and then execute the" +
-      " same"
+    id: 'B',
+    text: 'Node.JS internally converts JavaScript code to C based code and then execute the'
+      + ' same'
   }, {
-    id: "C",
+    id: 'C',
     text: "Being built on Google Chrome's V8 JavaScript Engine"
   }, {
-    id: "D",
-    text: "None of the above"
+    id: 'D',
+    text: 'None of the above'
   }]
 }, {
   id: 6,
   group: 4,
   order: 6,
   type: QuestionType.SINGLE,
-  question: "Which module is used to serve static resources in Node.js?",
+  question: 'Which module is used to serve static resources in Node.js?',
   result: ['A'],
   opts: [{
-    id: "A",
-    text: "node-static"
+    id: 'A',
+    text: 'node-static'
   }, {
-    id: "B",
-    text: "http"
+    id: 'B',
+    text: 'http'
   }, {
-    id: "C",
-    text: "node-resource"
+    id: 'C',
+    text: 'node-resource'
   }, {
-    id: "D",
-    text: "static"
+    id: 'D',
+    text: 'static'
   }]
 }, {
   id: 7,
   group: 4,
   order: 7,
   type: QuestionType.SINGLE,
-  question: "What should you do in your code to improve your application’s performance?",
+  question: 'What should you do in your code to improve your application’s performance?',
   result: ['A'],
   opts: [{
-    id: "A",
-    text: "Use gzip compression"
+    id: 'A',
+    text: 'Use gzip compression'
   }, {
-    id: "B",
-    text: "Don’t use synchronous functions"
+    id: 'B',
+    text: 'Don’t use synchronous functions'
   }, {
-    id: "C",
-    text: "Do logging correctly"
+    id: 'C',
+    text: 'Do logging correctly'
   }, {
-    id: "D",
-    text: "Handle exceptions properly"
+    id: 'D',
+    text: 'Handle exceptions properly'
   }]
 }, {
   id: 8,
   group: 4,
   order: 8,
   type: QuestionType.SINGLE,
-  question: "Is console a global object?",
+  question: 'Is console a global object?',
   result: ['A'],
   opts: [{
-    id: "A",
-    text: "null"
+    id: 'A',
+    text: 'null'
   }, {
-    id: "B",
-    text: "false"
+    id: 'B',
+    text: 'false'
   }, {
-    id: "C",
-    text: "true"
+    id: 'C',
+    text: 'true'
   }, {
-    id: "D",
-    text: "None"
+    id: 'D',
+    text: 'None'
   }]
-}]
+}];
 
 const questions = [{
   group: 1,
@@ -250,14 +250,14 @@ const questions = [{
 ];
 
 const defaultQuiz = {
-  name: "Quiz about Coffee",
-  description: "Make a description here",
-  author: "Google",
+  name: 'Quiz about Coffee',
+  description: 'Make a description here',
+  author: 'Google',
   groups,
   questions
 };
 
 export {
   defaultQuiz as
-    default, questions
+  default, questions
 };

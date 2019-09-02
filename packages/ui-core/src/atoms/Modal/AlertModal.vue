@@ -5,7 +5,13 @@
         <h2 v-text="title"></h2>
       </div>
       <div class="modal__header-actions">
-        <button class="snackbar__actions-close" title="Close" @click="$emit('close')">X</button>
+        <button
+          class="snackbar__actions-close"
+          title="Close"
+          @click="$emit('close')"
+        >
+          X
+        </button>
       </div>
     </template>
     <template #body>

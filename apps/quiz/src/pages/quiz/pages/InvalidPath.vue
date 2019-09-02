@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "InvalidPathPage"
+  name: 'InvalidPathPage'
 };
 </script>

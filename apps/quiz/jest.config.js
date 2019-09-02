@@ -15,11 +15,11 @@ module.exports = {
   ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    '@constants': "<rootDir>/src/constants",
-    '@data': "<rootDir>/src/data",
-    '@components': "<rootDir>/src/components",
-    '@pages': "<rootDir>/src/pages",
-    '@scss': "<rootDir>/src/scss"
+    '@constants': '<rootDir>/src/constants',
+    '@data': '<rootDir>/src/data',
+    '@components': '<rootDir>/src/components',
+    '@pages': '<rootDir>/src/pages',
+    '@scss': '<rootDir>/src/scss'
   },
   snapshotSerializers: [
     'jest-serializer-vue'
@@ -32,4 +32,4 @@ module.exports = {
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname'
   ]
-}
+};

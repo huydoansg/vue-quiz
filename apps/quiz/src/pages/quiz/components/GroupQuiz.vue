@@ -5,17 +5,20 @@
       <p class="group-quiz__quiz-time">{{ g.time }} min(s)</p>
       <p class="group-quiz__quiz-desc" v-html="g.description"></p>
       <template #footer>
-        <button class="btn-primary" type="button" @click="$emit('start', g)">Start this quiz</button>
+        <button class="btn-primary" type="button" @click="$emit('start', g)">
+          Start this quiz
+        </button>
       </template>
     </card>
   </section>
 </template>
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+
 const { Card } = atoms;
 
 export default {
-  name: "GroupQuiz",
+  name: 'GroupQuiz',
   components: {
     Card
   },

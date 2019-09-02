@@ -21,17 +21,18 @@
 </template>
 
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+
 const { Card } = atoms;
 
 export default {
-  name: "ReviewPage",
-  inject: ["$service", "goToResult"],
+  name: 'ReviewPage',
+  inject: ['$service', 'goToResult'],
   components: {
     Card
   },
   props: {
-    quizId: { type: String, default: "", required: true }
+    quizId: { type: String, default: '', required: true }
   },
   data() {
     return {

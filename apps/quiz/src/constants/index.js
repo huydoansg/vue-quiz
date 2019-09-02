@@ -27,7 +27,7 @@ export const GroupType = {
   DEFAULT: 'NORMAL',
   NORMAL: 'NORMAL',
   RANDOM: 'RANDOM'
-}
+};
 
 export const QuestionType = {
   DEFAULT: 'SINGLE',

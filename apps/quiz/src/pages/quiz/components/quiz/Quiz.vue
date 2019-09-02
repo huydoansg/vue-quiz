@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import SingleQuiz from "./SingleQuiz";
-import MultipleQuiz from "./MultipleQuiz";
-import { QuestionType } from "@constants";
+import SingleQuiz from './SingleQuiz.vue';
+import MultipleQuiz from './MultipleQuiz.vue';
+import { QuestionType } from '@constants';
 
 export default {
-  name: "Quiz",
+  name: 'Quiz',
   components: { SingleQuiz, MultipleQuiz },
   props: {
     type: { type: String, default: QuestionType.SINGLE },
@@ -18,10 +18,10 @@ export default {
     isQuizType() {
       switch (this.type) {
         case QuestionType.MULTIPLE:
-          return "multiple-quiz";
+          return 'multiple-quiz';
         case QuestionType.SINGLE:
         default:
-          return "single-quiz";
+          return 'single-quiz';
       }
     }
   }

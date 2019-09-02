@@ -1,5 +1,6 @@
 // vue.config.js
-const path = require('path')
+const path = require('path');
+
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -24,4 +25,4 @@ module.exports = {
       }
     }
   }
-}
+};

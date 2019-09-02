@@ -1,6 +1,6 @@
 import {
   GroupType
-} from "@constants";
+} from '@constants';
 import {
   isLast,
   getFirstQuestion,
@@ -11,13 +11,12 @@ import {
   listGroup,
   getQuizByGroup
 } from '../index';
-import quizQuestions from "@data";
+import quizQuestions from '@data';
 
 describe('Quiz Service', () => {
-
   it('load all groups', () => {
     expect(listGroup().length).toBe(3);
-  })
+  });
 
   it('Load quiz by conditions', () => {
     const normalGroup = getQuizByGroup(1, GroupType.NORMAL);
@@ -27,7 +26,7 @@ describe('Quiz Service', () => {
     const randomGroup = getQuizByGroup(3, GroupType.RANDOM);
     expect(randomGroup.questions.length).toBe(2);
     expect(randomGroup.type).toBe(GroupType.RANDOM);
-  })
+  });
 
   it('Find a question correctly by Id', () => {
     expect(findQuestion(quizQuestions.questions, 1)).toBeDefined();
@@ -52,7 +51,7 @@ describe('Quiz Service', () => {
     })).toBeDefined();
     expect(getNextQuestion(quizQuestions.questions, {
       path: '1'
-    }).path).toBe("2");
+    }).path).toBe('2');
     expect(getNextQuestion(quizQuestions.questions, {
       path: '2'
     }).path).toBeUndefined();
@@ -68,6 +67,5 @@ describe('Quiz Service', () => {
 
   it('Get random is less than max', () => {
     expect(getRandomNumber(10)).toBeLessThan(10);
-  })
-
+  });
 });

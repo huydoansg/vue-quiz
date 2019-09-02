@@ -14,13 +14,13 @@ const snackBarPlugin = {
       },
       // getEventBus: () => snackBarPlugin.EventBus,
       register(cb) {
-        snackBarPlugin.EventBus.$on("show", cb);
+        snackBarPlugin.EventBus.$on('show', cb);
       },
       destroy() {
-        snackBarPlugin.EventBus.$off("show");
+        snackBarPlugin.EventBus.$off('show');
       }
-    }
+    };
   }
-}
+};
 
 export default snackBarPlugin;

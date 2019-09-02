@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: "QuizBase",
+  name: 'QuizBase',
   props: {
     quiz: { type: Object, default: () => {} }
   }

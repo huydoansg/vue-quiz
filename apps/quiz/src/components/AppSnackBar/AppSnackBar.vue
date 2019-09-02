@@ -12,17 +12,17 @@
   </section>
 </template>
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+
 const { SnackBar } = atoms;
 
 export default {
-  name: "AppSnackBar",
+  name: 'AppSnackBar',
   components: {
     SnackBar
   },
   data() {
     return {
-      message: "Cannot send!",
       messages: []
     };
   },

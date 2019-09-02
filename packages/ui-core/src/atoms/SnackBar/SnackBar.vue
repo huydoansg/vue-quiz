@@ -8,7 +8,13 @@
       </div>
       <div class="snackbar__actions">
         <slot name="footer">
-          <button class="snackbar__actions-close" title="Dismiss" @click="$emit('close')">X</button>
+          <button
+            class="snackbar__actions-close"
+            title="Dismiss"
+            @click="$emit('close')"
+          >
+            X
+          </button>
         </slot>
       </div>
     </div>

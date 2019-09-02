@@ -7,8 +7,12 @@
       <div v-html="content"></div>
     </template>
     <template #footer>
-      <button type="button" class="secondary" @click="$emit('cancel')">Cancel</button>
-      <button type="button" class="primary" @click="$emit('confirm')">Confirm</button>
+      <button type="button" class="secondary" @click="$emit('cancel')">
+        Cancel
+      </button>
+      <button type="button" class="primary" @click="$emit('confirm')">
+        Confirm
+      </button>
     </template>
   </modal>
 </template>

@@ -4,11 +4,11 @@ import Home from '@pages/Home.vue';
 import About from '@pages/About.vue';
 import NotFound from '@pages/NotFound.vue';
 import {
-  DefaultPath
-} from '@constants';
-import {
   configure
 } from '@pages/quiz';
+import {
+  DefaultPath
+} from '@constants';
 
 Vue.use(Router);
 

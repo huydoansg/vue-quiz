@@ -14,20 +14,21 @@
 </template>
 
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+import Quiz from '../components/quiz';
+
 const { Card } = atoms;
-import Quiz from "../components/quiz";
 
 export default {
-  name: "QuestionPage",
-  inject: ["$service", "onLoaded"],
+  name: 'QuestionPage',
+  inject: ['$service', 'onLoaded'],
   components: {
     Card,
     Quiz
   },
   props: {
-    quizId: { type: String, default: "", required: true },
-    questionId: { type: String, default: "", required: true }
+    quizId: { type: String, default: '', required: true },
+    questionId: { type: String, default: '', required: true }
   },
   data() {
     return {
@@ -51,7 +52,7 @@ export default {
   },
   created() {
     this.$service.getQuestion(this.quizId, this.questionId);
-    this.onLoaded.$on("loaded", question => {
+    this.onLoaded.$on('loaded', (question) => {
       this.question = question;
     });
   }

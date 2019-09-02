@@ -10,13 +10,13 @@ const modalPlugin = {
         modalPlugin.EventBus.$emit('hide');
       },
       register(cb) {
-        modalPlugin.EventBus.$on("show", cb);
+        modalPlugin.EventBus.$on('show', cb);
       },
       destroy() {
-        modalPlugin.EventBus.$off("show");
+        modalPlugin.EventBus.$off('show');
       }
-    }
+    };
   }
-}
+};
 
 export default modalPlugin;

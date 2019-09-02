@@ -8,16 +8,12 @@
 </template>
 
 <script>
-import { atoms } from "@quiz/ui-core";
-const { Card } = atoms;
-
-import GroupQuiz from "../components/GroupQuiz";
+import GroupQuiz from '../components/GroupQuiz.vue';
 
 export default {
-  name: "WelcomePage",
-  inject: ["$service"],
+  name: 'WelcomePage',
+  inject: ['$service'],
   components: {
-    Card,
     GroupQuiz
   },
   data() {

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "AppRoot"
+  name: 'AppRoot'
 };
 </script>
 <style lang="scss">

@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "NavigationQuiz",
+  name: 'NavigationQuiz',
   props: {
     pages: { type: Array, default: () => [], required: true }
   }

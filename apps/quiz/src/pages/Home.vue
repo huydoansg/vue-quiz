@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import { QuizPages, DefaultPath, DialogType } from "@constants";
+import { QuizPages, DefaultPath } from '@constants';
 
 export default {
-  name: "home",
+  name: 'home',
   data() {
     return {
       QuizPage: { ...QuizPages.welcome, path: DefaultPath }

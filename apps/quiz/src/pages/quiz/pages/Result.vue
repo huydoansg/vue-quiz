@@ -18,17 +18,18 @@
 </template>
 
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+
 const { Card } = atoms;
 
 export default {
-  name: "ResultPage",
-  inject: ["$service"],
+  name: 'ResultPage',
+  inject: ['$service'],
   components: {
     Card
   },
   props: {
-    quizId: { type: String, default: "", required: true }
+    quizId: { type: String, default: '', required: true }
   },
   data() {
     return {
@@ -42,7 +43,7 @@ export default {
   },
   methods: {
     handleBack() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: '/' });
     }
   },
   created() {

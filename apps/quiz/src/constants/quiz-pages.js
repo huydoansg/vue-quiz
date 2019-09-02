@@ -27,4 +27,4 @@ export const QuizPages = {
     path: '/result',
     description: 'Your result'
   }
-}
+};

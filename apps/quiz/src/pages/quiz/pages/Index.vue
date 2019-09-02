@@ -11,28 +11,23 @@
         <router-view />
       </transition>
     </div>
-    <!-- <quiz-footer /> -->
   </div>
 </template>
 
 <script>
-import Vue from "vue";
-import { QuestionType, QuestionPerQuiz } from "@constants";
-import { TopBar } from "@components";
+import Vue from 'vue';
+import { QuestionType, QuestionPerQuiz } from '@constants';
+import { TopBar } from '@components';
 
-import Navigation from "../components/Navigation";
-import QuizFooter from "../components/QuizFooter";
-import * as quizServices from "../services";
+import * as quizServices from '../services';
 
 export default {
-  name: "QuizIndexPage",
+  name: 'QuizIndexPage',
   components: {
-    TopBar,
-    Navigation,
-    QuizFooter
+    TopBar
   },
   props: {
-    basePath: { type: String, default: "", required: true }
+    basePath: { type: String, default: '', required: true }
   },
   data() {
     return {
@@ -105,7 +100,7 @@ export default {
     triggerOnLoad(question) {
       this.current = question;
       this.$nextTick(() => {
-        this.onLoaded.$emit("loaded", question);
+        this.onLoaded.$emit('loaded', question);
       });
     },
     saveAndNext(question, answers) {
@@ -134,9 +129,6 @@ export default {
     },
     goToResult(quizId) {
       this.$router.push({ path: `/quiz/${quizId}/result` });
-    },
-    navigateBaseOnQuiz(quiz) {
-      // back to welcome?
     }
   },
   mounted() {
@@ -145,12 +137,12 @@ export default {
   },
   computed: {
     navPages() {
-      return navLinks(this.basePath);
+      return quizServices.navLinks(this.basePath);
     }
   },
   beforeDestroy() {
     // release event listeners
-    this.onLoaded.$off("loaded");
+    this.onLoaded.$off('loaded');
   }
 };
 </script>

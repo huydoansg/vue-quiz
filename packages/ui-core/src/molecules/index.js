@@ -6,11 +6,4 @@ import SecondLoop from "./TestLoop/SecondLoop";
 import ScopedSlot from "./Practicals/ScopedSlot";
 import ImgBlock from "./Practicals/ImgBlock";
 
-export {
-  Welcome,
-  HelloWorld,
-  FirstLoop,
-  SecondLoop,
-  ScopedSlot,
-  ImgBlock
-};
+export { Welcome, HelloWorld, FirstLoop, SecondLoop, ScopedSlot, ImgBlock };

@@ -14,12 +14,13 @@
   </section>
 </template>
 <script>
-import { atoms } from "@quiz/ui-core";
+import { atoms } from '@quiz/ui-core';
+import { DialogType } from '@constants';
+
 const { AlertModal, ConfirmationModal } = atoms;
-import { DialogType } from "@constants";
 
 export default {
-  name: "AppDialog",
+  name: 'AppDialog',
   components: {
     AlertModal,
     ConfirmationModal
@@ -47,7 +48,7 @@ export default {
       this.handleClose(dialog);
     },
     handleCallback(cb) {
-      if (typeof cb === "function") {
+      if (typeof cb === 'function') {
         cb();
       }
     },
@@ -57,10 +58,10 @@ export default {
     dialogType({ type }) {
       switch (type) {
         case DialogType.Confirmation:
-          return "confirmation-modal";
+          return 'confirmation-modal';
         case DialogType.Alert:
         default:
-          return "alert-modal";
+          return 'alert-modal';
       }
     },
     showDialog(params) {

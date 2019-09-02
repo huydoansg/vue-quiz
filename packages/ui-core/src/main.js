@@ -3,8 +3,4 @@ import * as molecules from "./molecules";
 
 import * as templates from "./templates";
 
-export {
-  atoms,
-  molecules,
-  templates
-};
+export { atoms, molecules, templates };
