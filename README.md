@@ -15,6 +15,9 @@ This is Quiz application that run on Web, support mobile with PWA.
 - [ ] Resume the quiz
 - [ ] Refactor code of Quiz service
 - [ ] Get back to wrong question in Review page.
+- [ ] Build home page, about page
+- [ ] Build loading for page, component
+- [ ] Build skeleton loading/placeholder loading for component
 
 ## Technical Applied
 
@@ -25,6 +28,7 @@ This is Quiz application that run on Web, support mobile with PWA.
 - [x] Do not use VueX to manage stage
 - [x] Make some unit test
 - [x] Apply alias path
+- [x] Lazy load for quiz
 
 ## Plan to apply
 
@@ -34,3 +38,4 @@ This is Quiz application that run on Web, support mobile with PWA.
 - [ ] Try to deploy to production env
 - [ ] Easy to change new theme
 - [ ] Do multiple languages
+- [ ] Build splash page
